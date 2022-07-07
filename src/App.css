@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=League+Gothic&family=Teko:wght@300;400;500;700&display=swap');
+
+/* Poke Intro */
+.pokedex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    background-image: url('../src/assets/img/fondo.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: 0;
+}
+
+.poke-content {	
+    color: rgb(189, 56, 56);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.pokecoach-men {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pokecoach-men img {
+    width: 35%;
+}
+
+.pokecoach-woman img {
+    width: 35%;
+    /* margin-left: 50%; */
+}
+
+.pokecoach {
+    width: 30%
+}
+
+.pokedex-intro {
+    text-align: center;
+    width: 30%;
+}
+
+
+.pokedex-title {
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    color: rgb(199, 202, 30);
+    -webkit-text-stroke: 4px #163f8b;
+}
+
+.poke-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-input {
+    border: none;
+    height: 25px;
+    width: 60%;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #a81313;
+}
+
+input {
+    color: #a81313;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+input::placeholder {
+    color: #a813138e;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.poke-btn {
+    border: none;
+    height: 27px;
+    padding: 0 5px ;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    background:#ad2828;
+    color: #fff;
+    position: relative;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+}
+
+.poke-btn:hover {	
+    background:#e23737;
+}
+/* Poke - Home Page */
+
+.poke-user { 
+    font-weight: 700;
+    font-family: 'Teko', sans-serif;
+    margin-left: 40px;
+}
+
+.input-pokeScreen {
+    margin-left: 40px;
+}
+
+.input-pokeScreen input {
+    border:1px solid #a81313;
+    border-radius: 5px;
+    height: 30px;
+    width: 30%;
+}
+
+.poke-user span{
+    color: rgb(173, 40, 40);
+}
+
+.bar-header {
+    margin-bottom: 200px;
+}
+
+.bar-red {
+    position: absolute;
+    width: 100%;
+    height: 123.18px;
+    left: 0px;
+    top: 0px;
+    background: #DD1A1A;
+}
+
+.bar-black {
+    position: absolute;
+    width: 100%;
+    height: 49.7px;
+    left: 0px;
+    top: 111.3px;
+    background: #0C0C0C;
+}
+
+.poke-img {
+    position: absolute;
+    width: 431px;
+    height: 76px;
+    left: 113px;
+    top: 47px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    background: #95f3ff52;
+    padding: 20px 0;
+}
+
+.card-pokemon {
+    border-radius: 10px;
+    width: 20%;
+    overflow: hidden;
+}
+
+.card-poke-header {
+   text-align: center;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img img {
+    width: 50%;
+}
+
+.card-hp{
+    display: inline-block;
+    width: 60px;
+    background: #fff;
+    text-align: center;
+    padding: 3px 1px;
+    border-radius: 30px;
+    position: relative;
+    top: 5%;
+    left: 75%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 700;
+}
+
+.card-content {
+    text-align: center;
+    padding-right: 40px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #045b7e;
+    padding: 0;
+}
+
+.card-content-type {
+    margin: 5px auto;
+}
+
+.card-type {
+    margin-top: 5px;
+    border-radius: 10px;
+    margin: 0 30px;
+    padding: 2px 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.card-poke-header img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.stats {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 5px 6px;
+    font-size: 14px;
+    margin: 5px auto;
+}
+
+.stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat span {	
+    font-weight: 700;
+}
+
+.poke-stats {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.poke-stat span {
+    font-weight: 700;
+}
+
+.poke-stat p {
+    color: #979797;    
+}
+/* Pagination */
+
+.pagination-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: max-content;
+    margin: 0 auto;
+    font-family: 'Teko', sans-serif;
+    margin-top: 20px;
+}
+
+.pagination-number-container{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.pagination-container input{
+    color: #a81313;
+    border: 3px solid #153268;
+    border-radius: 3px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    width: 45px;
+    text-align: center;
+}
+
+input:focus-visible {
+    border: 1px solid blue;
+}
+
+.pagination-next{
+    font-size: 30px;
+    color: #fcfcfc;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #153268;
+    border-radius: 8px;
+    border: none;
+}
+
+.pagination-prev {
+    font-size: 30px;
+    color: #fcfcfc;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #153268;
+    border-radius: 8px;
+    border: none;
+}
+
+.pagination-prev[disabled] {
+    background-color: #d3d3d3;
+    cursor: no-drop;
+}
+
+.pagination-prev[disabled]:hover {
+    background-color: #d3d3d3;
+    cursor: no-drop;
+}
+
+.pagination-next[disabled] {
+    background-color: #d3d3d3;
+    cursor: no-drop;
+}
+
+.pagination-next[disabled]:hover {
+    background-color: #d3d3d3;
+    cursor: no-drop;
+}
+  
+.page-number {
+    font-size: 30px;
+    color: #ffffff;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #163f8b;
+}
+
+.page {
+    font-size: 30px;
+    color: #163f8b;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.pagination-prev:hover, .pagination-next:hover {
+    background: #ce1919;
+}
+
+  /* PokeInfoScreen */
+
+.pokeinfo {
+    background:rgb(199, 236, 235);
+    padding-top: -10px;
+    padding-bottom: 50px
+}
+
+.pokemon-img {
+    width: 40%;
+    position: relative;
+}
+
+.pokemon-img img {
+    width: 60%;
+}
+ 
+.pokeinfo-header {
+    background: #21a586;
+    border: 4px solid #ffffff;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.pokeinfo-header h2 {
+    border: 1px solid #ccc;
+    max-width: 90px;
+    margin: 0 auto;
+    background:rgb(221, 221, 221);
+    border-radius: 3px;
+    color:rgb(21, 50, 104)
+}
+
+.pokeinfo-header img {
+    width: 70%;
+}
+
+.pokeinfo-name {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #dddddd;
+}
+
+.pokeinfo-body {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 50px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+}
+
+.pokeinfo-body h3 {	
+    font-size: 30px;
+    color: #212121;	
+}
+
+.poke-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    text-align: start;
+    font-size: 30px;
+}
+
+.hp {
+    color: rgb(46, 117, 18);
+}
+
+.attack {
+    color: rgb(201, 47, 47);
+}
+
+.defense {
+    color: rgb(50, 85, 131);
+}
+
+.speed {
+    color: rgb(128, 43, 136);
+}
+
+.sp-attack {
+    color: rgb(187, 187, 5)
+}
+
+.sp-defense {
+    color: rgb(206, 158, 25);
+}
+
+.stat p {
+    color: #979797;
+}
+
+.pokeinfo-type {
+    border-radius: 10px;
+    margin: 0 30px;
+    padding: 4px 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.btn-previus {
+    background: rgb(179, 55, 39);
+    border: none;
+    padding: 5px 6px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: #fff;
+    position: relative;
+    top: 60px;
+    left: 1200px;
+}
+
+.btn-previus:hover {
+    background: rgb(216, 74, 56);
+}
+
+/* Movements */
+
+.poke-movements {
+    background:rgb(255, 255, 255);
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px auto;
+    border: 4px solid #ffffff;
+}
+
+.poke-movements h3 {
+    font-size: 30px;
+    color: #536cc0;	
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+}
+
+.poke-movements-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.movements p{
+    background: #dcdcdd;
+    padding: 5px 3px;
+    border-radius: 20px;
+    width: 80%;
+    color:rgb(46, 44, 44);
+    margin: 5px 15px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* ================ Color Pokemon Type ===================== */
+
+.bg-normal-card {
+    background: #735159;
+    background: radial-gradient( circle at 50% 0%, #735159 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #735159;
+    border: 2.5px solid #735159;
+}
+
+.bg-normal-card:hover {
+    box-shadow: 0px 0px 12px 3px #735159;
+    cursor: pointer;
+}
+
+.bg-fighting-card {
+    background: #973f26;
+    background: radial-gradient( circle at 50% 0%, #973f26 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #973f26;
+    border: 2.5px solid #973f26;
+}
+
+.bg-fighting-card:hover {
+    box-shadow: 0px 0px 12px 3px #973f26;
+    cursor: pointer;
+}
+
+.bg-flying-card {
+    background: #48677b;
+    background: radial-gradient( circle at 50% 0%, #48677b 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #48677b;
+    border: 2.5px solid #48677b;
+}
+
+.bg-flying-card:hover {
+    box-shadow: 0px 0px 12px 3px #48677b;
+    cursor: pointer;
+}
+
+.bg-poison-card {
+    background: #5b2d86;
+    background: radial-gradient( circle at 50% 0%, #5b2d86 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #5b2d86;
+    border: 2.5px solid #5b2d86;
+}
+
+.bg-poison-card:hover {
+    box-shadow: 0px 0px 12px 3px #5b2d86;
+    cursor: pointer;
+}
+
+.bg-ground-card {
+    background: #765833;
+    background: radial-gradient( circle at 50% 0%, #765833 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #765833;
+    border: 2.5px solid #765833;
+}
+
+.bg-ground-card:hover {
+    box-shadow: 0px 0px 12px 3px #765833;
+    cursor: pointer;
+}
+
+.bg-rock-card {
+    background: #361c15;
+    background: radial-gradient( circle at 50% 0%, #361c15 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #361c15;
+    border: 2.5px solid #361c15;
+}
+
+.bg-rock-card:hover{
+    box-shadow: 0px 0px 12px 3px #361c15;
+    cursor: pointer;
+}
+
+.bg-bug-card {
+    background: #597a33;
+    background: radial-gradient( circle at 50% 0%, #597a33 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #597a33;
+    border: 2.5px solid #597a33;
+}
+
+.bg-bug-card:hover {
+    box-shadow: 0px 0px 12px 3px #597a33;
+    cursor: pointer;
+}
+
+.bg-ghost-card {
+    background: #222452;
+    background: radial-gradient( circle at 50% 0%, #222452 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #222452;
+    border: 2.5px solid #222452;
+}
+
+.bg-ghost-card:hover {
+    box-shadow: 0px 0px 12px 3px #222452;
+    cursor: pointer;
+}
+
+.bg-steel-card {
+    background: radial-gradient( circle at 50% 0%, #5d736c 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #5d736c;
+    border: 2.5px solid #5d736c;
+}
+
+.bg-steel-card:hover {
+    box-shadow: 0px 0px 12px 3px #5d736c;
+    cursor: pointer;
+}
+
+.bg-fire-card {
+    background: radial-gradient( circle at 50% 0%, #bf3434 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #bf3434;
+    border: 2.5px solid #bf3434;
+}
+
+.bg-fire-card:hover{
+    box-shadow: 0px 0px 12px 3px #bf3434;
+    cursor: pointer;
+}
+
+.bg-water-card {
+    background: radial-gradient( circle at 50% 0%, #70b7fa 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #70b7fa;
+    border: 2.5px solid #70b7fa;
+}
+
+.bg-water-card:hover {
+    box-shadow: 0px 0px 12px 3px #70b7fa;
+    cursor: pointer;
+}
+
+.bg-grass-card {
+    background: radial-gradient( circle at 50% 0%, #21a586 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #21a586;
+    border: 2.5px solid #21a586;
+}
+
+.bg-grass-card:hover {
+    box-shadow: 0px 0px 12px 3px #21a586;
+    cursor: pointer;
+    /* transform: scale(1.1);
+    transition: all 1s; */
+}
+
+.bg-electric-card {
+    background: #fbbd08;
+    background: radial-gradient( circle at 50% 0%, #fbbd08 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #fbbd08;
+    border: 2.5px solid #fbbd08;
+}
+
+.bg-electric-card:hover {
+    box-shadow: 0px 0px 12px 3px #fbbd08;
+    cursor: pointer;
+}
+
+.bg-psychic-card {
+    background: #b98544;
+    background: radial-gradient( circle at 50% 0%, #b98544 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #b98544;
+    border: 2.5px solid #b98544;
+}
+
+.bg-psychic-card:hover {
+    box-shadow: 0px 0px 12px 3px #b98544;
+    cursor: pointer;
+}
+
+.bg-ice-card {
+    background: #86d2f4;
+    background: radial-gradient( circle at 50% 0%, #86d2f4 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #86d2f4;
+    border: 2.5px solid #86d2f4;
+}
+
+.bg-ice-card:hover {
+    box-shadow: 0px 0px 12px 3px #86d2f4;
+    cursor: pointer;
+}
+
+.bg-dragon-card {
+    background: #448a94;
+    background: radial-gradient( circle at 50% 0%, #448a94 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #448a94;
+    border: 2.5px solid #448a94;
+}
+
+.bg-dragon-card:hover {
+    box-shadow: 0px 0px 12px 3px #448a94;
+    cursor: pointer;
+}
+
+.bg-dark-card {
+    background: #191c1b;
+    background: radial-gradient( circle at 50% 0%, #191c1b 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #191c1b;
+    border: 2.5px solid #191c1b;
+}
+
+.bg-dark-card:hover {
+    box-shadow: 0px 0px 12px 3px #191c1b;
+    cursor: pointer;
+}
+
+.bg-fairy-card {
+    background: #8f2c4e;
+    background: radial-gradient( circle at 50% 0%, #8f2c4e 46%, #ffffff 36% );
+    box-shadow: 0px 0px 10px 0px #8f2c4e;
+    border: 2.5px solid #8f2c4e;
+}
+
+.bg-fairy-card:hover {
+    box-shadow: 0px 0px 12px 3px #8f2c4e;
+    cursor: pointer;
+}
+
+/* PokeInfo Color */
+.bg-normal {
+    background: #735159;
+}
+
+.bg-fighting {
+    background: #973f26;
+}
+
+.bg-flying {
+    background: #48677b;
+}
+
+.bg-poison {
+    background: #5b2d86;
+}
+
+.bg-ground {
+    background: #765833;
+}
+
+.bg-rock {
+    background: #361c15;
+}
+
+.bg-bug {
+    background: #597a33;
+}
+
+.bg-ghost {
+    background: #222452;
+}
+
+.bg-steel {
+    background: #5d736c;
+}
+
+.bg-fire {
+    background: #bf3434;
+}
+
+.bg-water {
+    background: #70b7fa;
+}
+
+.bg-grass {
+    background: #21a586;
+}
+
+.bg-electric {
+    background: #fbbd08;
+}
+
+.bg-psychic {
+    background: #b98544;
+}
+
+.bg-ice {
+    background: #86d2f4;
+}
+
+.bg-dragon {
+    background: #448a94;
+}
+
+.bg-dark {
+    background: #191c1b;
+}
+
+.bg-fairy {
+    background: #8f2c4e;
+}
